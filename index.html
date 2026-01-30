@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spicy Tomato Donut | Bold & Savory</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Modern CSS inspired by the Wix layout */
+        :root {
+            --primary-color: #D32F2F; /* Tomato Red */
+            --accent-color: #FF5722; /* Spicy Orange */
+            --bg-light: #fff9f8;
+            --text-dark: #333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+        }
+
+        /* Header & Navigation */
+        header {
+            background: white;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-text {
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover { color: var(--accent-color); }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 80px 10%;
+            background: linear-gradient(135deg, #fff 60%, #ffebee 40%);
+        }
+
+        .hero-content { max-width: 500px; }
+        .hero-content h1 { font-size: 3.5rem; color: var(--primary-color); margin-bottom: 10px; }
+        .hero-content p { font-size: 1.2rem; color: #666; margin-bottom: 25px; }
+
+        .btn {
+            background: var(--primary-color);
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .btn:hover { background: var(--accent-color); }
+
+        /* Sections Styling */
+        section { padding: 80px 10%; text-align: center; }
+        h2 { font-size: 2.5rem; margin-bottom: 20px; position: relative; display: inline-block; }
+        h2::after { content: ''; width: 60px; height: 4px; background: var(--accent-color); position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); }
+
+        /* Services Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+        .card:hover { transform: translateY(-10px); }
+        .card i { font-size: 3rem; color: var(--accent-color); margin-bottom: 15px; }
+
+        /* Contact Form */
+        .contact-container {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            padding: 40px 10%;
+            text-align: center;
+        }
+
+        .social-icons a { color: white; font-size: 1.5rem; margin: 0 10px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-area">
+            <span class="logo-text">SPICY TOMATO DONUT</span>
+        </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>SPICY TOMATO DONUT WELCOMES YOU</h1>
+            <p>You deserve something bold today. A unique fusion of garden-fresh tomatoes and a kick of spice in a fluffy donut.</p>
+            <a href="#contact" class="btn">Get in Touch</a>
+        </div>
+        <div class="hero-image">
+            <img src= alt="Delicious Donut" style="border-radius: 20px; box-shadow: 20px 20px 0 var(--accent-color);">
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>BUSINESS BACKGROUND</h2>
+        <p style="max-width: 800px; margin: 30px auto;">Since opening in 2026, Spicy Tomato Donut has been proud to serve flavor adventurers. We are committed to redefining the pastry world by blending savory, tangy, and spicy notes into every bite. Reach out today to experience the heat!</p>
+    </section>
+
+    <section id="services" style="background: #fff;">
+        <h2>OUR SERVICES</h2>
+        <p>Here’s What We Provide</p>
+        <div class="grid">
+            <div class="card">
+                <i class="fas fa-truck"></i>
+                <h3>SCHEDULED DELIVERY</h3>
+                <p>Satisfaction guaranteed, safe delivery and freshly made. We ensure your spicy treats arrive hot and ready.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-headset"></i>
+                <h3>CUSTOMER SERVICE</h3>
+                <p>We are here for you. Our team is dedicated to making your savory experience stress-free and delicious.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-utensils"></i>
+                <h3>BULK ORDERS</h3>
+                <p>Perfect for parties and daring events. Let us cater your next gathering with a flavor they won't forget.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>GET IN TOUCH</h2>
+        <div class="contact-container">
+            <form>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="text" placeholder="Subject">
+                <textarea rows="5" placeholder="Your Message..."></textarea>
+                <button type="submit" class="btn" style="width: 100%; border: none; cursor: pointer;">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>©2026 by Spicy Tomato Donut. Boldly Crafted.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>
